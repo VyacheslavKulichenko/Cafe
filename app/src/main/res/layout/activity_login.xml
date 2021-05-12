@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/lightBrown"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        app:srcCompat="@drawable/drink"
+        android:contentDescription="@string/logo_description" />
+
+    <TextView
+        android:id="@+id/textViewWelcome"
+        android:layout_width="match_parent"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/greyshoko"
+        android:text="@string/welcome"
+        android:layout_margin="8dp"/>
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/white"
+        android:textStyle="bold"
+        android:layout_margin="8dp"
+        android:inputType="textPersonName"
+        android:hint="@string/hint_name"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="@string/hint_password"
+        android:textColorHint="@color/white"
+        android:textStyle="bold"
+        android:layout_margin="8dp"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/buttonCreateOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:background="@color/blecshoko"
+        android:textColor="@color/white"
+        android:layout_margin="8dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginEnd="30dp"
+        android:onClick="onClickCreateOrder"
+        android:text="@string/button_create_order" />
+</LinearLayout>
+
